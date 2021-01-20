@@ -1,0 +1,31 @@
+{
+  "name": "serverless-middleware-test",
+  "version": "1.0.0",
+  "description": "Serverless webpack example using Typescript",
+  "main": "handler.js",
+  "scripts": {
+    "deploy-dev": "sls deploy --stage dev",
+    "deploy-prod": "sls deploy --stage prod",
+    "dynamo-local": "sls dynamodb start",
+    "serverless-offline-dev": "sls offline start -s dev"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.17",
+    "@types/jest": "^26.0.14",
+    "@types/node": "^10.12.18",
+    "@types/serverless": "^1.72.5",
+    "aws-sdk": "^2.771.0",
+    "fork-ts-checker-webpack-plugin": "^3.0.1",
+    "serverless-middleware": "0.0.10",
+    "serverless-offline": "^6.8.0",
+    "serverless-webpack": "^5.2.0",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.10.2",
+    "typescript": "^4.0.3",
+    "webpack": "^4.29.0",
+    "webpack-node-externals": "^1.7.2"
+  },
+  "author": "The serverless webpack authors (https://github.com/elastic-coders/serverless-webpack)",
+  "license": "MIT"
+}
